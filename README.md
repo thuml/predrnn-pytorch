@@ -1,5 +1,6 @@
 # PredRNN
-This is a **PyTorch** implementation of [PredRNN](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms), a deep recurrent predictive model for video data. 
+This is a **PyTorch** implementation of the Predictive Recurrent Network, a deep model for deterministic video prediction.  
+NeurIPS 2017 [[paper](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms)]
 
 ## Steps
 1. Install Python 3.7, PyTorch 1.3, and Opencv 3.4.  
