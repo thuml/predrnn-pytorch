@@ -1,6 +1,5 @@
 # PredRNN (NeurIPS 2017)
-A PyTorch implementation of PredRNN, a recurrent network with twisted space-time memory cells for video data. Given a sequence of previous frames, our model generates multi-step future frames. The video prediction model can be used for precipitation nowcasting, early activity recognition, physical scene understanding, model-based visual planning, and etc.  
-[[paper](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms)]
+A PyTorch implementation of PredRNN [[paper](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms)], a recurrent network with twisted space-time memory cells for video data. Given a sequence of previous frames, our model generates multi-step future frames. It can be used for precipitation nowcasting, early activity recognition, physical scene understanding, model-based visual planning, and etc.
 
 ## Get Started
 1. Install Python 3.7, PyTorch 1.3, and Opencv 3.4.  
