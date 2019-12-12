@@ -7,7 +7,7 @@ This is a PyTorch implementation of PredRNN, a recurrent network for determinist
 
 2. Download data. This repo contains code for two datasets: the [Moving Mnist dataset](https://1drv.ms/f/s!AuK5cwCfU3__fGzXjcOlzTQw158) and the [KTH human action dataset](http://www.nada.kth.se/cvap/actions/).  
 
-3. Train the model. You can use the bash script to train the model:
+3. Train the model. You can use the following bash script to train the model.
 ```
 cd script/
 sh predrnn_mnist_train.sh
