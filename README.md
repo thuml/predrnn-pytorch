@@ -2,10 +2,10 @@
 This is a PyTorch implementation of [PredRNN](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms), a deep recurrent predictive model for video data, by Yunbo Wang, Mingsheng Long, Jianmin Wang, Zhifeng Gao, and Philip S. Yu.
 
 ## Setup
-Required python libraries: pytorch + opencv + numpy.\
+Required python libraries: pytorch + opencv + numpy.
 
 ## Datasets
-We conduct experiments on datasets [Moving Mnist](https://1drv.ms/f/s!AuK5cwCfU3__fGzXjcOlzTQw158) and [KTH Actions](http://www.nada.kth.se/cvap/actions/).\
+We conduct experiments on datasets [Moving Mnist](https://1drv.ms/f/s!AuK5cwCfU3__fGzXjcOlzTQw158) and [KTH Actions](http://www.nada.kth.se/cvap/actions/).
 
 ## Training
 Use the bash script to train the model:
