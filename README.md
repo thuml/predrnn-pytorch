@@ -1,4 +1,4 @@
-# PredRNN++
+# PredRNN
 This is a PyTorch implementation of [PredRNN](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms), a deep recurrent predictive model for video data, by Yunbo Wang, Mingsheng Long, Jianmin Wang, Zhifeng Gao, and Philip S. Yu.
 
 ## Setup
