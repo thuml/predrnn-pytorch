@@ -4,7 +4,7 @@ A PyTorch implementation of PredRNN [[paper](https://papers.nips.cc/paper/6689-p
 Video prediction networks have been used for precipitation nowcasting, early activity recognition, physical scene understanding, model-based visual planning, and unsupervised representation learning of video data.
 
 ## Get Started
-1. Install Python 3.7, PyTorch 1.3, and Opencv 3.4.  
+1. Install Python 3.7, PyTorch 1.3, and OpenCV 3.4.  
 
 2. Download data. This repo contains code for two datasets: the [Moving Mnist dataset](https://1drv.ms/f/s!AuK5cwCfU3__fGzXjcOlzTQw158) and the [KTH action dataset](http://www.nada.kth.se/cvap/actions/).  
 
