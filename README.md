@@ -29,3 +29,6 @@ If you use this repo or our results in your research, please remember to cite th
 **PredRNN++: Towards A Resolution of the Deep-in-Time Dilemma in Spatiotemporal Predictive Learning.**  
 Yunbo Wang, Zhifeng Gao, Mingsheng Long, Jianmin Wang, and Philip S. Yu.  
 ICML 2018 [[paper](http://proceedings.mlr.press/v80/wang18b.html)] [[code](https://github.com/Yunbo426/predrnn-pp)]
+
+## Contact
+@wyb15 or send email to yunbo.thu@gmail.com or longmingsheng@gmail.com.
