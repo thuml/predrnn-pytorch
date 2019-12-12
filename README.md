@@ -1,4 +1,4 @@
-# PredRNN
+# PredRNN (NeurIPS 2017)
 This is a PyTorch implementation of PredRNN, a recurrent network for deterministic video prediction [[paper](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms)].
 
 ## Steps
