@@ -1,22 +1,22 @@
 # PredRNN
-This is a PyTorch implementation of [PredRNN](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms), a deep recurrent predictive model for video data. by [*Yunbo Wang*](http://people.csail.mit.edu/yunbo/)and [*Mingsheng Long*](http://ise.thss.tsinghua.edu.cn/~mlong/), et al..
-
-## Setup
-Required python libraries: pytorch + opencv + numpy.
+This is a PyTorch implementation of [PredRNN](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms), a deep recurrent predictive model for video data.
 
 ## Datasets
 We conduct experiments on datasets [Moving Mnist](https://1drv.ms/f/s!AuK5cwCfU3__fGzXjcOlzTQw158) and [KTH Actions](http://www.nada.kth.se/cvap/actions/).
 
-## Training
-Use the bash script to train the model:
+## Usage
+Required python libraries: pytorch + opencv + numpy.
+
+You can use the bash script to train the model:
 ```
 cd script/
 sh predrnn_mnist_train.sh
 ```
-The learned model will be saved in the `--save_dir` folder.
-
-## Test
+The learned model will be saved in the `--save_dir` folder.  
 The generated future frames will be saved in the `--gen_frm_dir` folder.
+
+## Maintainers
+@wyb15
 
 ## Citation
 Remember to cite our paper if you use the repository.
