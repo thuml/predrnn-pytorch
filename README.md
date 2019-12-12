@@ -1,7 +1,7 @@
 # PredRNN (NeurIPS 2017)
 This is a PyTorch implementation of PredRNN, a recurrent network for deterministic video prediction [[paper](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms)].
 
-## Steps
+## Get started
 1. Install Python 3.7, PyTorch 1.3, and Opencv 3.4.  
 
 2. Download data. This repo contains code for two datasets: the [Moving Mnist dataset](https://1drv.ms/f/s!AuK5cwCfU3__fGzXjcOlzTQw158) and the [KTH human action dataset](http://www.nada.kth.se/cvap/actions/).  
