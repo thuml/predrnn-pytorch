@@ -1,7 +1,6 @@
 # PredRNN
-This is a PyTorch implementation of PredRNN, a predictive recurrent network for deterministic video prediction.  
-Yunbo Wang, Mingsheng Long, Jianmin Wang, Zhifeng Gao, and Philip S. Yu.  
-NeurIPS 2017 [[paper](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms)]
+This is a PyTorch implementation of PredRNN, a recurrent network for deterministic video prediction.  
+[[paper](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms)]
 
 ## Steps
 1. Install Python 3.7, PyTorch 1.3, and Opencv 3.4.  
