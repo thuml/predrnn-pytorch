@@ -1,25 +1,5 @@
 # PredRNN
-This is a PyTorch implementation of [PredRNN](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms), a deep recurrent predictive model for video data.
-
-## Datasets
-We conduct experiments on datasets [Moving Mnist](https://1drv.ms/f/s!AuK5cwCfU3__fGzXjcOlzTQw158) and [KTH Actions](http://www.nada.kth.se/cvap/actions/).
-
-## Usage
-Required python libraries: pytorch + opencv + numpy.
-
-You can use the bash script to train the model:
-```
-cd script/
-sh predrnn_mnist_train.sh
-```
-The learned model will be saved in the `--save_dir` folder.  
-The generated future frames will be saved in the `--gen_frm_dir` folder.
-
-## Maintainers
-@wyb15
-
-## Citation
-Remember to cite our paper if you use the repository.
+This is a PyTorch implementation of [PredRNN](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms), a deep recurrent predictive model for video data. Remember to cite our paper if you use the repository.
 ```
 @inproceedings{wang2017predrnn,
   title={Predrnn: Recurrent neural networks for predictive learning using spatiotemporal lstms},
@@ -29,6 +9,19 @@ Remember to cite our paper if you use the repository.
   year={2017}
 }
 ```
+
+## Steps
+1. Install Python 3.7, PyTorch 1.3, and Opencv 3.4.  
+
+2. Download data. This repo contains code for two datasets: the [Moving Mnist dataset](https://1drv.ms/f/s!AuK5cwCfU3__fGzXjcOlzTQw158) and the [human action KTH dataset](http://www.nada.kth.se/cvap/actions/).  
+
+3. Train the model. You can use the bash script to train the model:
+```
+cd script/
+sh predrnn_mnist_train.sh
+```
+The learned model will be saved in the `--save_dir` folder.  
+The generated future frames will be saved in the `--gen_frm_dir` folder.
 
 ## Related Code Repo
 **PredRNN++: Towards A Resolution of the Deep-in-Time Dilemma in Spatiotemporal Predictive Learning.**  
