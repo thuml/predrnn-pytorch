@@ -1,5 +1,7 @@
 # PredRNN
-This is a PyTorch implementation of [PredRNN](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms), a deep recurrent predictive model for video data. Remember to cite our paper if you use the repository.
+This is a PyTorch implementation of [PredRNN](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms), a deep recurrent predictive model for video data. 
+
+If you use this repo or our results in your research, please remember to cite the following paper:
 ```
 @inproceedings{wang2017predrnn,
   title={Predrnn: Recurrent neural networks for predictive learning using spatiotemporal lstms},
