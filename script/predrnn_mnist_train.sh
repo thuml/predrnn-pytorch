@@ -1,5 +1,6 @@
+cd ..
 python -u run.py \
-    --is_training True \
+    --is_training 1 \
     --device cuda \
     --dataset_name mnist \
     --train_data_paths /home/wangyunbo/yunbo/data/moving-mnist-example/moving-mnist-train.npz \
@@ -7,7 +8,7 @@ python -u run.py \
     --save_dir checkpoints/mnist_predrnn \
     --gen_frm_dir results/mnist_predrnn \
     --model_name predrnn \
-    --reverse_input True \
+    --reverse_input 1 \
     --img_width 64 \
     --img_channel 1 \
     --input_length 10 \
@@ -16,8 +17,8 @@ python -u run.py \
     --filter_size 5 \
     --stride 1 \
     --patch_size 4 \
-    --layer_norm True \
-    --scheduled_sampling True \
+    --layer_norm 1 \
+    --scheduled_sampling 1 \
     --sampling_stop_iter 50000 \
     --sampling_start_value 1.0 \
     --sampling_changing_rate 0.00002 \
