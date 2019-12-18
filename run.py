@@ -55,8 +55,7 @@ parser.add_argument('--num_save_samples', type=int, default=10)
 parser.add_argument('--n_gpu', type=int, default=1)
 
 args = parser.parse_args()
-args.tied = True
-
+print(args)
 
 def schedule_sampling(eta, itr):
     zeros = np.zeros((args.batch_size,
