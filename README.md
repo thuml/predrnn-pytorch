@@ -1,4 +1,4 @@
-# PredRNN (NeurIPS 2017)
+# PredRNN (NIPS 2017)
 A PyTorch implementation of PredRNN [[paper](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms)], a recurrent network with *twisted and zigzag space-time memory cells* for video data. Given a sequence of previous frames, our model generates future frames for multiple timestamps.
 
 Video prediction networks have been used for precipitation nowcasting, early activity recognition, physical scene understanding, model-based visual planning, and unsupervised representation learning of video data.
