@@ -47,7 +47,7 @@ def test(model, test_input_handle, configs, itr):
 
         img_gen = preprocess.reshape_patch_back(img_gen, configs.patch_size)
         output_length = configs.total_length - configs.input_length
-        img_gen_length = img_gen.shape[0]
+        img_gen_length = img_gen.shape[1]
         img_out = img_gen[:, -output_length:]
 
         # MSE per frame
