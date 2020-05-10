@@ -19,7 +19,7 @@ sh predrnn_mnist_train.sh
 If you use this repo or our results in your research, please remember to cite the following paper.
 ```
 @inproceedings{wang2017predrnn,
-  title={Predrnn: Recurrent neural networks for predictive learning using spatiotemporal lstms},
+  title={{Predrnn}: Recurrent Neural Networks for Predictive Learning Using Spatiotemporal {LSTM}s},
   author={Wang, Yunbo and Long, Mingsheng and Wang, Jianmin and Gao, Zhifeng and Philip, S Yu},
   booktitle={Advances in Neural Information Processing Systems},
   pages={879--888},
