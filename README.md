@@ -1,8 +1,9 @@
 # PredRNN (NeurIPS 2017)
 
-Video prediction networks have been used for precipitation nowcasting, early activity recognition, physical scene understanding, model-based visual planning, and unsupervised representation learning of video data.
+The predictive learning of spatiotemporal sequences aims to generate future images by learning from the historical context, where the visual dynamics are believed to have modular structures that can be learned with compositional subsystems
 
-This is a PyTorch implementation of **PredRNN** [[paper](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms)], a recurrent network with *twisted and zigzag space-time memory cells* for video data. Given a sequence of previous frames, our model generates future frames for multiple timestamps.
+This repo first contains a PyTorch implementation of **PredRNN** [[paper](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms)], a recurrent network with a pair of memory cells that operate in nearly independent transition manners, and finally form unified representations of the complex environment. Concretely, besides the original memory cell of LSTM, this network is featured by a zigzag memory flow that propagates in both bottom-up and top-down directions across all layers, enabling the learned visual dynamics at different levels of RNNs to communicate.
+
 
 It also includes the implementation of **PredRNN-V2**, a more powerful model for video prediction and done in 2021. We strengthen the PredRNN in both memory decoupling and training strategy. This version achieves better prediction to various spatiotemporal dynamics.
 
@@ -12,12 +13,9 @@ We present PredRNN-V2 by extending PredRNN (2017) in the following two aspects.
 
 1. **Memory Decoupling**
 
-In ST-LSTM units of PredRNN, we find that the memory states $C_t$ and $M_t$ are tangled, which contains redundant features and prevents the model capturing long-term and short-term dynamics effectively. 
+In the original PredRNN (2017), we find that the pair of memory cells contain redundant features, which prevents the model from capturing modular structures of visual dynamics. We thus present a memory decoupling loss to unleash the respective strengths of the two 
 
-We present the decoupling loss to the increments $\Delta C_t$, $\Delta M_t$ of both memory states. 
-$$
-\mathcal{L}_{\text{decouple}} = \sum_{t}\sum_{l}\sum_{c}\frac{\lvert\left< \Delta \mathcal{C}_t^l, \Delta \mathcal{M}_t^l\right>_{c}\rvert}{\Vert \Delta \mathcal{C}_t^l\Vert_{c}\cdot\Vert\Delta \mathcal{M}_t^l\Vert_{c}}
-$$
+
 Memory decoupling unleashes the respective strengths of  $C_t$ and $M_t$ for long-term and short-term dynamic modeling. With memory decoupling, PredRNN achieves more accurate responses to various dynamics.
 
 ![response](./pic/response.png)
