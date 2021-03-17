@@ -29,6 +29,8 @@ It has two benefits: (1) It bridges the gap between encoder/forcaster and makes 
 
 ## Prediction examples
 
+![mnist](./pic/mnist.png)
+
 ![kth](./pic/kth.png)
 
 ![radar](./pic/radar.png)
