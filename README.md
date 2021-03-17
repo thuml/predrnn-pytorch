@@ -8,6 +8,8 @@ Concretely, besides the original memory cell of LSTM, this network is featured b
 
 This repo also includes the implementation of **PredRNN-V2** (2021), a more powerful model for video prediction. 
 
+![network](./pic/network.png)
+
 ## New in PredRNN-V2 (2021)
 
 We present PredRNN-V2 by extending PredRNN (2017) in the following two aspects.
@@ -16,17 +18,21 @@ We present PredRNN-V2 by extending PredRNN (2017) in the following two aspects.
 
 We find that the pair of memory cells in PredRNN contain undesirable, redundant features, and thus present a memory decoupling loss to encourage them to learn modular structures of visual dynamics. 
 
-![response](./pic/arch.png)
+![decouple](./pic/decouple.png)
 
 2. **Reverse Scheduled Sampling**
 
-In the training process of prediction networks, there is the discrepancy between encoder and forcaster part, which receives the ground truth and prediction results respectively. The prediction model will be overwhelmed because of this discrepancy in each sequence prediction.
+Reverse scheduled sampling is a new curriculum learning strategy. As opposed to scheduled sampling, it gradually changes the training process of the PredRNN encoder from using the previously generated frame to using the previous ground truth. 
 
-We proposed a new training approach as **Reverse Scheduled Sampling(RSS)**. Different from previous, the input of the encoder is randomly sampled from both prediction results and ground truth in the beginning, and then gradually changes to all sampled from ground truth.
+It has two benefits: (1) It bridges the gap between encoder/forcaster and makes the training convergence quickly. (2) It enforces the seq-to-seq RNNs to learn more from long-term input context. 
 
 ![rss](./pic/rss.png)
 
-This approach bridges the gap between encoder-forcaster and makes the training convergence quickly. Besides, it also allows the model to dig more information from input frames. RSS shows strong performance in various dataset and can be used in the training of any prediction models.
+## Prediction examples
+
+![kth](./pic/kth.png)
+
+![radar](./pic/radar.png)
 
 ## Get Started
 
