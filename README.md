@@ -1,17 +1,14 @@
-# PredRNN (NeurIPS 2017) & PredRNN-V2 (2021)
+The predictive learning of spatiotemporal sequences aims to generate future images by learning from the historical context, where the visual dynamics are believed to have modular structures that can be learned with compositional subsystems.
 
-The predictive learning of spatiotemporal sequences aims to generate future images by learning from the historical context, where the visual dynamics are believed to have modular structures that can be learned with compositional subsystems
+## PredRNN (NeurIPS 2017)
 
 This repo first contains a PyTorch implementation of **PredRNN** (2017) [[paper](https://papers.nips.cc/paper/6689-predrnn-recurrent-neural-networks-for-predictive-learning-using-spatiotemporal-lstms)], a recurrent network with a pair of memory cells that operate in nearly independent transition manners, and finally form unified representations of the complex environment. 
 
 Concretely, besides the original memory cell of LSTM, this network is featured by a zigzag memory flow that propagates in both bottom-up and top-down directions across all layers, enabling the learned visual dynamics at different levels of RNNs to communicate.
 
-This repo also includes the implementation of **PredRNN-V2** (2021), a more powerful model for video prediction. 
-
-
 ## New in PredRNN-V2 (2021)
 
-PredRNN-V2 is an extention of PredRNN (2017) in the following two aspects.
+This repo also includes the implementation of **PredRNN-V2** (2021), which improves PredRNN in the following two aspects.
 
 #### 1. Memory Decoupling
 
