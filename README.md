@@ -13,13 +13,13 @@ This repo also includes the implementation of **PredRNN-V2** (2021), a more powe
 
 PredRNN-V2 is an extention of PredRNN (2017) in the following two aspects.
 
-1. **Memory Decoupling**
+* **Memory Decoupling**
 
 We find that the pair of memory cells in PredRNN contain undesirable, redundant features, and thus present a memory decoupling loss to encourage them to learn modular structures of visual dynamics. 
 
 ![decouple](./pic/decouple.png)
 
-2. **Reverse Scheduled Sampling**
+* **Reverse Scheduled Sampling**
 
 Reverse scheduled sampling is a new curriculum learning strategy for seq-to-seq RNNs. As opposed to scheduled sampling, it gradually changes the training process of the PredRNN encoder from using the previously generated frame to using the previous ground truth. **Benefits:** (1) It makes the training converge quickly by reducing the encoder-forcaster training gap. (2) It enforces the model to learn more from long-term input context. 
 
