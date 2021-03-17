@@ -11,7 +11,7 @@ This repo also includes the implementation of **PredRNN-V2** (2021), a more powe
 
 ## New in PredRNN-V2 (2021)
 
-We present PredRNN-V2 by extending PredRNN (2017) in the following two aspects.
+PredRNN-V2 is an extention of PredRNN (2017) in the following two aspects.
 
 1. **Memory Decoupling**
 
