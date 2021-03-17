@@ -1,8 +1,7 @@
 import os
 import torch
-import torch.nn as nn
 from torch.optim import Adam
-from core.models import predrnn
+from core.models import predrnn, predrnn_memory_decoupling
 
 class Model(object):
     def __init__(self, configs):
@@ -10,7 +9,8 @@ class Model(object):
         self.num_hidden = [int(x) for x in configs.num_hidden.split(',')]
         self.num_layers = len(self.num_hidden)
         networks_map = {
-            'predrnn': predrnn.RNN
+            'predrnn': predrnn.RNN,
+            'predrnn_memory_decoupling': predrnn_memory_decoupling.RNN,
         }
 
         if configs.model_name in networks_map:
@@ -20,7 +20,6 @@ class Model(object):
             raise ValueError('Name of network unknown %s' % configs.model_name)
 
         self.optimizer = Adam(self.network.parameters(), lr=configs.lr)
-        self.MSE_criterion = nn.MSELoss()
 
     def save(self, itr):
         stats = {}
@@ -38,8 +37,7 @@ class Model(object):
         frames_tensor = torch.FloatTensor(frames).to(self.configs.device)
         mask_tensor = torch.FloatTensor(mask).to(self.configs.device)
         self.optimizer.zero_grad()
-        next_frames = self.network(frames_tensor, mask_tensor)
-        loss = self.MSE_criterion(next_frames, frames_tensor[:, 1:])
+        next_frames, loss = self.network(frames_tensor, mask_tensor)
         loss.backward()
         self.optimizer.step()
         return loss.detach().cpu().numpy()
@@ -47,5 +45,5 @@ class Model(object):
     def test(self, frames, mask):
         frames_tensor = torch.FloatTensor(frames).to(self.configs.device)
         mask_tensor = torch.FloatTensor(mask).to(self.configs.device)
-        next_frames = self.network(frames_tensor, mask_tensor)
+        next_frames, _ = self.network(frames_tensor, mask_tensor)
         return next_frames.detach().cpu().numpy()
