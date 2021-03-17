@@ -14,9 +14,9 @@ We present PredRNN-V2 by extending PredRNN (2017) in the following two aspects.
 
 1. **Memory Decoupling**
 
-We find that the pair of memory cells in PredRNN contain undesirable, redundant features, and thus present a memory decoupling loss to encourage them to learn modular structures of visual dynamics. PredRNN achieves better responses to suddent.
+We find that the pair of memory cells in PredRNN contain undesirable, redundant features, and thus present a memory decoupling loss to encourage them to learn modular structures of visual dynamics. 
 
-![response](./pic/response.png)
+![response](./pic/arch.png)
 
 2. **Reverse Scheduled Sampling**
 
