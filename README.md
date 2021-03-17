@@ -8,7 +8,6 @@ Concretely, besides the original memory cell of LSTM, this network is featured b
 
 This repo also includes the implementation of **PredRNN-V2** (2021), a more powerful model for video prediction. 
 
-![network](./pic/network.png)
 
 ## New in PredRNN-V2 (2021)
 
