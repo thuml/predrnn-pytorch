@@ -70,6 +70,7 @@ If you find this repo useful, please cite the following paper.
   pages={879--888},
   year={2017}
 }
+
 @misc{wang2021predrnn,
       title={PredRNN: A Recurrent Neural Network for Spatiotemporal Predictive Learning}, 
       author={Yunbo Wang and Haixu Wu and Jianjin Zhang and Zhifeng Gao and Jianmin Wang and Philip S. Yu and Mingsheng Long},
@@ -78,11 +79,6 @@ If you find this repo useful, please cite the following paper.
       archivePrefix={arXiv},
 }
 ```
-
-## Related Publication
-**PredRNN++: Towards A Resolution of the Deep-in-Time Dilemma in Spatiotemporal Predictive Learning.**  
-Yunbo Wang, Zhifeng Gao, Mingsheng Long, Jianmin Wang, and Philip S. Yu. 
-ICML 2018 [[paper](http://proceedings.mlr.press/v80/wang18b.html)] [[code](https://github.com/Yunbo426/predrnn-pp)]
 
 ## Contact
 You may send emails to yunbo.thu@gmail.com or longmingsheng@gmail.com, or create an issue in this repo and @wyb15. 
