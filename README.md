@@ -20,9 +20,16 @@ We find that the pair of memory cells in PredRNN contain undesirable, redundant 
 
 #### 2. Reverse Scheduled Sampling
 
-Reverse scheduled sampling is a new curriculum learning strategy for seq-to-seq RNNs. As opposed to scheduled sampling, it gradually changes the training process of the PredRNN encoder from using the previously generated frame to using the previous ground truth. **Benefits:** (1) It makes the training converge quickly by reducing the encoder-forcaster training gap. (2) It enforces the model to learn more from long-term input context. 
+Reverse scheduled sampling is a new curriculum learning strategy for seq-to-seq RNNs. As opposed to scheduled sampling, it gradually changes the training process of the PredRNN encoder from using the previously generated frame to using the previous ground truth. **Benefits:** (1) It makes the training converge quickly by reducing the encoder-forecaster training gap. (2) It enforces the model to learn more from long-term input context. 
 
 ![rss](./pic/rss.png)
+
+## Evaluation in LPIPS 
+
+|        | Moving MNIST | KTH action |
+|  ----  | ----   | ---- |
+| PredRNN  | 0.109 | 0.204 | 
+| PredRNN-V2  | 0.071 | 0.139 | 
 
 ## Prediction examples
 
@@ -68,6 +75,6 @@ Yunbo Wang, Zhifeng Gao, Mingsheng Long, Jianmin Wang, and Philip S. Yu.
 ICML 2018 [[paper](http://proceedings.mlr.press/v80/wang18b.html)] [[code](https://github.com/Yunbo426/predrnn-pp)]
 
 ## Contact
-You may send email to yunbo.thu@gmail.com or longmingsheng@gmail.com, or create an issue in this repo and @wyb15. 
+You may send emails to yunbo.thu@gmail.com or longmingsheng@gmail.com, or create an issue in this repo and @wyb15. 
 
  
