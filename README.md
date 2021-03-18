@@ -10,7 +10,8 @@ Concretely, besides the original memory cell of LSTM, this network is featured b
 
 ## New in PredRNN-V2 (2021)
 
-This repo also includes the implementation of **PredRNN-V2** (2021), which improves PredRNN in the following two aspects.
+This repo also includes the implementation of **PredRNN-V2** (2021) [[paper](https://arxiv.org/pdf/2103.09504.pdf)], which improves PredRNN in the following two aspects.
+
 
 #### 1. Memory Decoupling
 
@@ -20,9 +21,18 @@ We find that the pair of memory cells in PredRNN contain undesirable, redundant 
 
 #### 2. Reverse Scheduled Sampling
 
-Reverse scheduled sampling is a new curriculum learning strategy for seq-to-seq RNNs. As opposed to scheduled sampling, it gradually changes the training process of the PredRNN encoder from using the previously generated frame to using the previous ground truth. **Benefits:** (1) It makes the training converge quickly by reducing the encoder-forcaster training gap. (2) It enforces the model to learn more from long-term input context. 
+Reverse scheduled sampling is a new curriculum learning strategy for seq-to-seq RNNs. As opposed to scheduled sampling, it gradually changes the training process of the PredRNN encoder from using the previously generated frame to using the previous ground truth. **Benefits:** (1) It makes the training converge quickly by reducing the encoder-forecaster training gap. (2) It enforces the model to learn more from long-term input context. 
 
 ![rss](./pic/rss.png)
+
+## Evaluation in LPIPS
+
+LPIPS is more sensitive to perceptual human judgments, the lower the better.
+
+|        | Moving MNIST | KTH action |
+|  ----  | ----   | ---- |
+| PredRNN  | 0.109 | 0.204 | 
+| PredRNN-V2  | 0.071 | 0.139 | 
 
 ## Prediction examples
 
@@ -51,23 +61,22 @@ sh predrnn_v2_kth_train.sh
 
 ## Citation
 
-If you use this repo or our results in your research, please remember to cite the following paper.
+If you find this repo useful, please cite the following papers.
 ```
 @inproceedings{wang2017predrnn,
   title={{PredRNN}: Recurrent Neural Networks for Predictive Learning Using Spatiotemporal {LSTM}s},
-  author={Wang, Yunbo and Long, Mingsheng and Wang, Jianmin and Gao, Zhifeng and Philip, S Yu},
+  author={Wang, Yunbo and Long, Mingsheng and Wang, Jianmin and Gao, Zhifeng and Yu, Philip S},
   booktitle={Advances in Neural Information Processing Systems},
   pages={879--888},
   year={2017}
 }
+
+@misc{wang2021predrnn,
+      title={{PredRNN}: A Recurrent Neural Network for Spatiotemporal Predictive Learning}, 
+      author={Wang, Yunbo and Wu, Haixu and Zhang, Jianjin and Gao, Zhifeng and Wang, Jianmin and Yu, Philip S and Long, Mingsheng},
+      year={2021},
+      eprint={2103.09504},
+      archivePrefix={arXiv},
+}
 ```
-
-## Related Publication
-**PredRNN++: Towards A Resolution of the Deep-in-Time Dilemma in Spatiotemporal Predictive Learning.**  
-Yunbo Wang, Zhifeng Gao, Mingsheng Long, Jianmin Wang, and Philip S. Yu. 
-ICML 2018 [[paper](http://proceedings.mlr.press/v80/wang18b.html)] [[code](https://github.com/Yunbo426/predrnn-pp)]
-
-## Contact
-You may send email to yunbo.thu@gmail.com or longmingsheng@gmail.com, or create an issue in this repo and @wyb15. 
-
  
