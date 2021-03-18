@@ -1,4 +1,4 @@
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=4
 cd ..
 python -u run.py \
     --is_training 1 \
@@ -9,6 +9,7 @@ python -u run.py \
     --save_dir checkpoints/kth_predrnn_v2 \
     --gen_frm_dir results/kth_predrnn_v2 \
     --model_name predrnn_memory_decoupling \
+    --visual 0 \
     --reverse_input 1 \
     --img_width 128 \
     --img_channel 1 \

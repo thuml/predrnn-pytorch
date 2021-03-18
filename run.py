@@ -60,6 +60,10 @@ parser.add_argument('--snapshot_interval', type=int, default=5000)
 parser.add_argument('--num_save_samples', type=int, default=10)
 parser.add_argument('--n_gpu', type=int, default=1)
 
+# visualization of memory decoupling
+parser.add_argument('--visual', type=int, default=0)
+parser.add_argument('--visual_path', type=str, default='./decoupling_visual')
+
 args = parser.parse_args()
 print(args)
 

@@ -35,7 +35,7 @@ Reverse scheduled sampling is a new curriculum learning strategy for seq-to-seq 
 ## Get Started
 
 1. Install Python 3.7, PyTorch 1.3, and OpenCV 3.4.  
-2. Download data. This repo contains code for two datasets: the [Moving Mnist dataset](https://1drv.ms/f/s!AuK5cwCfU3__fGzXjcOlzTQw158) and the [KTH action dataset](http://www.nada.kth.se/cvap/actions/).  
+2. Download data. This repo contains code for two datasets: the [Moving Mnist dataset](https://cloud.tsinghua.edu.cn/d/21e9bde7cb954683ac94/) and the [KTH action dataset](https://cloud.tsinghua.edu.cn/d/7d19372a621a4952b738/).  
 3.  Train the model. You can use the following bash script to train the model. The learned model will be saved in the `--save_dir` folder. 
 The generated future frames will be saved in the `--gen_frm_dir` folder.  
 4. You can get **pretrained models** from [here](https://cloud.tsinghua.edu.cn/d/72241e0046a74f81bf29/).
