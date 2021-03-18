@@ -79,8 +79,4 @@ If you find this repo useful, please cite the following paper.
       archivePrefix={arXiv},
 }
 ```
-
-## Contact
-You may send emails to yunbo.thu@gmail.com or longmingsheng@gmail.com, or create an issue in this repo and @wyb15. 
-
  
