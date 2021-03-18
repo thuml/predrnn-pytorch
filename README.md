@@ -61,7 +61,7 @@ sh predrnn_v2_kth_train.sh
 
 ## Citation
 
-If you find this repo useful, please cite the following paper.
+If you find this repo useful, please cite the following papers.
 ```
 @inproceedings{wang2017predrnn,
   title={{PredRNN}: Recurrent Neural Networks for Predictive Learning Using Spatiotemporal {LSTM}s},
