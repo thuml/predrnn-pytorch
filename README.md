@@ -24,7 +24,9 @@ Reverse scheduled sampling is a new curriculum learning strategy for seq-to-seq 
 
 ![rss](./pic/rss.png)
 
-## Evaluation in LPIPS (more sensitive to perceptual human judgments)
+## Evaluation in LPIPS
+
+LPIPS is more sensitive to perceptual human judgments, the lower the better.
 
 |        | Moving MNIST | KTH action |
 |  ----  | ----   | ---- |
