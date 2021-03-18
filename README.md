@@ -10,7 +10,8 @@ Concretely, besides the original memory cell of LSTM, this network is featured b
 
 ## New in PredRNN-V2 (2021)
 
-This repo also includes the implementation of **PredRNN-V2** (2021), which improves PredRNN in the following two aspects.
+This repo also includes the implementation of **PredRNN-V2** (2021) [[paper](https://arxiv.org/pdf/2103.09504.pdf)], which improves PredRNN in the following two aspects.
+
 
 #### 1. Memory Decoupling
 
@@ -60,7 +61,7 @@ sh predrnn_v2_kth_train.sh
 
 ## Citation
 
-If you use this repo or our results in your research, please remember to cite the following paper.
+If you find this repo useful, please cite the following paper.
 ```
 @inproceedings{wang2017predrnn,
   title={{PredRNN}: Recurrent Neural Networks for Predictive Learning Using Spatiotemporal {LSTM}s},
@@ -68,6 +69,13 @@ If you use this repo or our results in your research, please remember to cite th
   booktitle={Advances in Neural Information Processing Systems},
   pages={879--888},
   year={2017}
+}
+@misc{wang2021predrnn,
+      title={PredRNN: A Recurrent Neural Network for Spatiotemporal Predictive Learning}, 
+      author={Yunbo Wang and Haixu Wu and Jianjin Zhang and Zhifeng Gao and Jianmin Wang and Philip S. Yu and Mingsheng Long},
+      year={2021},
+      eprint={2103.09504},
+      archivePrefix={arXiv},
 }
 ```
 
