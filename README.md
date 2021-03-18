@@ -72,7 +72,7 @@ If you find this repo useful, please cite the following papers.
 }
 
 @misc{wang2021predrnn,
-      title={PredRNN: A Recurrent Neural Network for Spatiotemporal Predictive Learning}, 
+      title={{PredRNN}: A Recurrent Neural Network for Spatiotemporal Predictive Learning}, 
       author={Wang, Yunbo and Wu, Haixu and Zhang, Jianjin and Gao, Zhifeng and Wang, Jianmin and Yu, Philip S and Long, Mingsheng},
       year={2021},
       eprint={2103.09504},
