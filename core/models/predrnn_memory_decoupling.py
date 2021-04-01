@@ -15,7 +15,7 @@ class RNN(nn.Module):
         self.visual = self.configs.visual
         self.visual_path = self.configs.visual_path
 
-        self.frame_channel = configs.patch_size * configs.patch_size
+        self.frame_channel = configs.patch_size * configs.patch_size * configs.img_channel
         self.num_layers = num_layers
         self.num_hidden = num_hidden
         cell_list = []

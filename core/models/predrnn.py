@@ -10,7 +10,7 @@ class RNN(nn.Module):
         super(RNN, self).__init__()
 
         self.configs = configs
-        self.frame_channel = configs.patch_size * configs.patch_size
+        self.frame_channel = configs.patch_size * configs.patch_size * configs.img_channel
         self.num_layers = num_layers
         self.num_hidden = num_hidden
         cell_list = []
