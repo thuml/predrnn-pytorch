@@ -110,7 +110,7 @@ class RNN(nn.Module):
             visualization(self.configs.total_length, self.num_layers, delta_c_visual, delta_m_visual, self.visual_path)
             self.visual = 0
 
-        decouple_loss = torch.mean(torch.tensor(decouple_loss).to(self.configs.device))
+        decouple_loss = torch.mean(torch.stack(decouple_loss, dim=0))
         # [length, batch, channel, height, width] -> [batch, length, height, width, channel]
         next_frames = torch.stack(next_frames, dim=0).permute(1, 0, 3, 4, 2).contiguous()
         loss = self.MSE_criterion(next_frames, frames_tensor[:, 1:]) + self.configs.decouple_beta * decouple_loss
