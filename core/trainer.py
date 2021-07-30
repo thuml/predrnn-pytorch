@@ -62,8 +62,7 @@ def test(model, test_input_handle, configs, itr):
         img_gen = model.test(test_dat, real_input_flag)
 
         img_gen = preprocess.reshape_patch_back(img_gen, configs.patch_size)
-        output_length = configs.total_length - configs.input_length
-        img_gen_length = img_gen.shape[1]
+        output_length = configs.total_length - configs.input_length 
         img_out = img_gen[:, -output_length:]
 
         # MSE per frame
@@ -116,10 +115,10 @@ def test(model, test_input_handle, configs, itr):
                 file_name = os.path.join(path, name)
                 img_gt = np.uint8(test_ims[0, i, :, :, :] * 255)
                 cv2.imwrite(file_name, img_gt)
-            for i in range(img_gen_length):
+            for i in range(output_length):
                 name = 'pd' + str(i + 1 + configs.input_length) + '.png'
                 file_name = os.path.join(path, name)
-                img_pd = img_gen[0, i, :, :, :]
+                img_pd = img_out[0, i, :, :, :]
                 img_pd = np.maximum(img_pd, 0)
                 img_pd = np.minimum(img_pd, 1)
                 img_pd = np.uint8(img_pd * 255)
