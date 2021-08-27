@@ -58,8 +58,9 @@ LPIPS is more sensitive to perceptual human judgments, the lower the better.
 | CrevNet          | 6.789                 |
 | U-Net+PredRNN-V2 | **5.135**             |
 
-
 ## Quantitative results on the action-conditioned BAIR dataset
+
+Frame-wise SSIM and PSNR for the predicted future 28 frames.
 
 <img src="./pic/BAIR_results.png" alt="bair" style="zoom:30%;" />
 
