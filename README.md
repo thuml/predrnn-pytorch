@@ -62,7 +62,7 @@ LPIPS is more sensitive to perceptual human judgments, the lower the better.
 
 Frame-wise SSIM and PSNR for the predicted future 28 frames.
 
-<img src="./pic/BAIR_results.png" alt="bair" style="zoom:30%;" />
+![bair_res](./pic/BAIR_results.png)
 
 
 ## Get Started
