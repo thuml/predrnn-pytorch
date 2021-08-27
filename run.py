@@ -64,6 +64,12 @@ parser.add_argument('--n_gpu', type=int, default=1)
 parser.add_argument('--visual', type=int, default=0)
 parser.add_argument('--visual_path', type=str, default='./decoupling_visual')
 
+# action-based predrnn
+parser.add_argument('--injection_action', type=str, default='concat')
+parser.add_argument('--conv_on_input', type=int, default=0, help='conv on input')
+parser.add_argument('--res_on_conv', type=int, default=0, help='res on conv')
+parser.add_argument('--num_action_ch', type=int, default=4, help='num action ch')
+
 args = parser.parse_args()
 print(args)
 
@@ -167,7 +173,7 @@ def train_wrapper(model):
     # load data
     train_input_handle, test_input_handle = datasets_factory.data_provider(
         args.dataset_name, args.train_data_paths, args.valid_data_paths, args.batch_size, args.img_width,
-        seq_length=args.total_length, is_training=True)
+        seq_length=args.total_length, injection_action=args.injection_action, is_training=True)
 
     eta = args.sampling_start_value
 
@@ -197,7 +203,7 @@ def test_wrapper(model):
     model.load(args.pretrained_model)
     test_input_handle = datasets_factory.data_provider(
         args.dataset_name, args.train_data_paths, args.valid_data_paths, args.batch_size, args.img_width,
-        seq_length=args.total_length, is_training=False)
+        seq_length=args.total_length, injection_action=args.injection_action, is_training=False)
     trainer.test(model, test_input_handle, args, 'test_result')
 
 
