@@ -61,7 +61,7 @@ LPIPS is more sensitive to perceptual human judgments, the lower the better.
 
 ## Quantitative results on the action-conditioned BAIR dataset
 
-<img src="./pic/BAIR_results.png" alt="bair" style="zoom:50%;" />
+<img src="./pic/BAIR_results.png" alt="bair" style="zoom:30%;" />
 
 
 ## Get Started
