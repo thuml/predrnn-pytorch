@@ -35,13 +35,22 @@ We show quantitative results for predicting 28 future frames from 2 observations
 
 ## Showcases
 
+Moving MNIST
+
 ![mnist](./pic/mnist.png)
+
+KTH
 
 ![kth](./pic/kth.png)
 
-![radar](./pic/radar.png)
-
+BAIR robot pushing
 ![bair](./pic/bair.png)
+
+Traffic4Cast
+![Traffic4Cast](./pic/Traffic4Cast.png)
+
+Radar echoes
+![radar](./pic/radar.png)
 
 ## Quantitative results on Moving MNIST and KTH in LPIPS
 
