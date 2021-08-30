@@ -63,7 +63,7 @@ LPIPS is more sensitive to perceptual human judgments, the lower the better.
 
 ## Quantitative results on Traffic4Cast (Berlin)
 
-|                  | MSE($10^{-3}$) |
+|                  | MSE (10^{-3}) |
 | ---------------- | --------------------- |
 | U-Net            | 6.992                 |
 | CrevNet          | 6.789                 |
