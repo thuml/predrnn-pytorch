@@ -27,9 +27,9 @@ Reverse scheduled sampling is a new curriculum learning strategy for seq-to-seq 
 
 #### 3. Action-Conditioned Video Prediction
 
-We further extend PredRNN to action-conditioned video prediction and evalutate the model on BAIR robot pushing dataset. By fusing the actions with hidden states, PredRNN and PredRNN-V2 show highly competitive performance in long-term forecasting. They are potential to serve as the base dynamic model in model-based visual control.
+We further extend PredRNN to action-conditioned video prediction. By fusing the actions with hidden states, PredRNN and PredRNN-V2 show highly competitive performance in long-term forecasting. They are potential to serve as the base dynamic model in model-based visual control.
 
-We show quantitative results for predicting 28 future frames from 2 observations.
+We show quantitative results on the BAIR robot pushing dataset for predicting 28 future frames from 2 observations.
 
 ![action](./pic/action_based.png)
 
@@ -43,7 +43,10 @@ KTH
 
 ![kth](./pic/kth.png)
 
-BAIR robot pushing (we zoom in on the area in the red box)
+BAIR
+
+We zoom in on the area in the red box.
+
 ![bair](./pic/bair.png)
 
 Traffic4Cast
