@@ -43,7 +43,7 @@ KTH
 
 ![kth](./pic/kth.png)
 
-BAIR robot pushing (We zoom in the areas in the red boxes for a clear comparison.)
+BAIR robot pushing (we zoom in on the area in the red box)
 ![bair](./pic/bair.png)
 
 Traffic4Cast
