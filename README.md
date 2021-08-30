@@ -43,9 +43,7 @@ KTH
 
 ![kth](./pic/kth.png)
 
-BAIR
-
-We zoom in on the area in the red box.
+BAIR (We zoom in on the area in the red box)
 
 ![bair](./pic/bair.png)
 
