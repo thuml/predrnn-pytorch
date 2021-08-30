@@ -23,11 +23,13 @@ We find that the pair of memory cells in PredRNN contain undesirable, redundant 
 
 Reverse scheduled sampling is a new curriculum learning strategy for seq-to-seq RNNs. As opposed to scheduled sampling, it gradually changes the training process of the PredRNN encoder from using the previously generated frame to using the previous ground truth. **Benefit:** It forces the model to learn long-term dynamics from context frames. 
 
-![rss](./pic/rss.png)
+[comment]: <![rss](./pic/rss.png)>
 
 #### 3. Action-Conditioned Video Prediction
 
 We further extend PredRNN to action-conditioned video prediction and evalutate the model on BAIR robot pushing dataset. By fusing the actions with hidden states, PredRNN and PredRNN-V2 show highly competitive performance in long-term forecasting. They are potential to serve as the base dynamic model in model-based visual control.
+
+We show quantitative results for predicting 28 future frames from 2 observations.
 
 ![action](./pic/action_based.png)
 
@@ -58,11 +60,11 @@ LPIPS is more sensitive to perceptual human judgments, the lower the better.
 | CrevNet          | 6.789                 |
 | U-Net+PredRNN-V2 | **5.135**             |
 
-## Quantitative results on the action-conditioned BAIR dataset
+[comment]:<## Quantitative results on the action-conditioned BAIR dataset>
 
-Frame-wise SSIM and PSNR for the predicted future 28 frames.
+[comment]:<Frame-wise SSIM and PSNR for the predicted future 28 frames.>
 
-![bair_res](./pic/BAIR_results.png)
+[comment]:<![bair_res](./pic/BAIR_results.png)>
 
 
 ## Get Started
