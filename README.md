@@ -46,7 +46,7 @@ KTH
 BAIR robot pushing
 ![bair](./pic/bair.png)
 
-Traffic4Cast
+Traffic4Cast (We zoom in the areas in the red boxes for a clear comparison.)
 ![Traffic4Cast](./pic/Traffic4Cast.png)
 
 Radar echoes
