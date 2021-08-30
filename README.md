@@ -48,9 +48,11 @@ BAIR (We zoom in on the area in the red box)
 ![bair](./pic/bair.png)
 
 Traffic4Cast
+
 ![Traffic4Cast](./pic/Traffic4Cast.png)
 
 Radar echoes
+
 ![radar](./pic/radar.png)
 
 ## Quantitative results on Moving MNIST and KTH in LPIPS
