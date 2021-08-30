@@ -6,9 +6,9 @@ python -u run.py \
     --dataset_name bair \
     --train_data_paths /data/Action-BAIR/ \
     --valid_data_paths /data/Action-BAIR/ \
-    --save_dir checkpoints/bair_action_based_predrnn \
-    --gen_frm_dir results/bair_action_based_predrnn \
-    --model_name action_based_predrnn \
+    --save_dir checkpoints/bair_action_cond_predrnn \
+    --gen_frm_dir results/bair_action_cond_predrnn \
+    --model_name action_cond_predrnn \
     --reverse_input 1 \
     --img_width 64 \
     --img_channel 3 \

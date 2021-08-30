@@ -2,7 +2,7 @@ __author__ = 'yunbo'
 
 import torch
 import torch.nn as nn
-from core.layers.SpatioTemporalLSTMCell_memory_decoupling import SpatioTemporalLSTMCell
+from core.layers.SpatioTemporalLSTMCell_v2 import SpatioTemporalLSTMCell
 import torch.nn.functional as F
 from core.utils.tsne import visualization
 

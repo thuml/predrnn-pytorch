@@ -8,7 +8,7 @@ python -u run.py \
     --valid_data_paths /workspace/wuhaixu/predrnn/data/moving-mnist-example/moving-mnist-valid.npz \
     --save_dir checkpoints/mnist_predrnn_v2 \
     --gen_frm_dir results/mnist_predrnn_v2 \
-    --model_name predrnn_memory_decoupling \
+    --model_name predrnn_v2 \
     --reverse_input 1 \
     --img_width 64 \
     --img_channel 1 \
