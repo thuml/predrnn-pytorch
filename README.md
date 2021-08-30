@@ -43,10 +43,10 @@ KTH
 
 ![kth](./pic/kth.png)
 
-BAIR robot pushing
+BAIR robot pushing (We zoom in the areas in the red boxes for a clear comparison.)
 ![bair](./pic/bair.png)
 
-Traffic4Cast (We zoom in the areas in the red boxes for a clear comparison.)
+Traffic4Cast
 ![Traffic4Cast](./pic/Traffic4Cast.png)
 
 Radar echoes
