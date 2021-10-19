@@ -92,7 +92,7 @@ LPIPS is more sensitive to perceptual human judgments, the lower the better.
 3. Train the model. You can use the following bash script to train the model. The learned model will be saved in the `--save_dir` folder.
   The generated future frames will be saved in the `--gen_frm_dir` folder.
 
-4. You can get **pretrained models** from [here](https://cloud.tsinghua.edu.cn/d/72241e0046a74f81bf29/).
+4. You can get **pretrained models** from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/72241e0046a74f81bf29/) or [Google Drive](https://drive.google.com/drive/folders/1jaEHcxo_UgvgwEWKi0ygX1SbODGz6PWw).
 ```
 cd mnist_script/
 sh predrnn_mnist_train.sh
