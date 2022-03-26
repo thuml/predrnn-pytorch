@@ -1,4 +1,4 @@
-# PredRNN: A Recurrent Neural Network for Spatiotemporal Predictive Learning (TPAMI 2021)
+# PredRNN: A Recurrent Neural Network for Spatiotemporal Predictive Learning (TPAMI 2022)
 
 The predictive learning of spatiotemporal sequences aims to generate future images by learning from the historical context, where the visual dynamics are believed to have modular structures that can be learned with compositional subsystems.
 
@@ -8,9 +8,9 @@ This repo first contains a PyTorch implementation of **PredRNN** (2017) [[paper]
 
 Concretely, besides the original memory cell of LSTM, this network is featured by a zigzag memory flow that propagates in both bottom-up and top-down directions across all layers, enabling the learned visual dynamics at different levels of RNNs to communicate.
 
-## New in PredRNN-V2 at TPAMI 2021
+## New in PredRNN-V2 at TPAMI 2022
 
-This repo also includes the implementation of **PredRNN-V2** (2021) [[paper](https://arxiv.org/pdf/2103.09504.pdf)], which improves PredRNN in the following three aspects.
+This repo also includes the implementation of **PredRNN-V2** [[paper](https://arxiv.org/pdf/2103.09504.pdf)], which improves PredRNN in the following three aspects.
 
 
 #### 1. Memory-Decoupled ST-LSTM
