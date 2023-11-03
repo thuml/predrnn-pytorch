@@ -162,21 +162,21 @@ class DataProcess:
         
         # Target array containing ALL RESIZED frames
         data = np.empty((tot_num_frames, self.image_width, self.image_width , 1),
-                        dtype=np.int8)  # np.float32
+                        dtype=np.float32)  # np.float32
 
         # Read, resize, and store video frames
         for i, frame in enumerate(self.generate_frames(path, mode_person_ids)):
             frame_im = Image.open(frame.file_path).convert('L') # int8 2D array
 
             # input type must be float32 for default interpolation method cv2.INTER_AREA
-            frame_np = np.array(frame_im, dtype=np.float32)  # (1000, 1000) numpy array
+            frame_np = np.array(frame_im, dtype=np.uint8)  # (1000, 1000) numpy array
             data[i,:,:,0] = (cv2.resize(
-                frame_np, (self.image_width,self.image_width))/255).astype(np.int8)
+                frame_np, (self.image_width,self.image_width))/255.0).astype(np.float32)
 
             frames_file_name.append(frame.file_name)
             frames_person_mark.append(frame.person_mark)
             frames_category.append(frame.category_flag)
-        
+            
         # identify sequences of <seq_len> within the same video
         indices = []
         seq_end_idx = len(frames_person_mark) - 1
