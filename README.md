@@ -83,7 +83,7 @@ LPIPS is more sensitive to perceptual human judgments, the lower the better.
 
 1. Install Python 3.6, PyTorch 1.9.0 for the main code. Also, install Tensorflow 2.1.0 for BAIR dataloader.
 
-2. Download data. This repo contains code for three datasets: the [Moving Mnist dataset](https://cloud.tsinghua.edu.cn/d/21e9bde7cb954683ac94/), the [KTH action dataset](https://cloud.tsinghua.edu.cn/d/7d19372a621a4952b738/), and the BAIR dataset (30.1GB), which can be obtained by:
+2. Download data. This repo contains code for three datasets: the [Moving Mnist dataset](https://onedrive.live.com/?authkey=%21AGzXjcOlzTQw158&id=FF7F539F0073B9E2%21124&cid=FF7F539F0073B9E2), the [KTH action dataset](https://cloud.tsinghua.edu.cn/d/7d19372a621a4952b738/), and the BAIR dataset (30.1GB), which can be obtained by:
 
    ```
    wget http://rail.eecs.berkeley.edu/datasets/bair_robot_pushing_dataset_v0.tar
